@@ -16,11 +16,14 @@ func main() {
 
 	fmt.Scan(&command)
 
-	if command == 1 {
+	switch command {
+	case 1:
 		fmt.Println("Monitoring ...")
-	} else if command == 2 {
+	case 2:
 		fmt.Println("Show logs ...")
-	} else if command == 0 {
+	case 0:
 		fmt.Println("Exiting")
+	default:
+		fmt.Println("Command not found")
 	}
 }
