@@ -16,5 +16,11 @@ func main() {
 
 	fmt.Scan(&command)
 
-	fmt.Println("The command choosed is", command)
+	if command == 1 {
+		fmt.Println("Monitoring ...")
+	} else if command == 2 {
+		fmt.Println("Show logs ...")
+	} else if command == 0 {
+		fmt.Println("Exiting")
+	}
 }
